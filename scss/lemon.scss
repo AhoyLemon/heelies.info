@@ -12,3 +12,13 @@
 @import "partials/_z-index";
 @import "partials/_extends";
 @import "partials/_default";
+
+.canon-v-legends {
+  a { display: inline-block; padding:8px; border-top-right-radius: 12px; border-top-left-radius: 12px; margin-right: 12px;  cursor: pointer; }
+  a.light { background:	hsl(213, 82%, 91%);
+    &:hover { background:hsl(213, 100%, 85%); }
+  }
+  a.dark { background:hsl(209, 77%, 18%);
+    &:hover { background:hsl(209, 89%, 28%); }
+  }
+}

@@ -244,3 +244,24 @@ img {
   -ms-grid-columns: (1fr)[3];
   grid-template-columns: repeat(3, 1fr);
 }
+
+.canon-v-legends a {
+  display: inline-block;
+  padding: 8px;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+  margin-right: 12px;
+  cursor: pointer;
+}
+.canon-v-legends a.light {
+  background: #d5e6fb;
+}
+.canon-v-legends a.light:hover {
+  background: #b3d5ff;
+}
+.canon-v-legends a.dark {
+  background: #0b2f51;
+}
+.canon-v-legends a.dark:hover {
+  background: #084a87;
+}

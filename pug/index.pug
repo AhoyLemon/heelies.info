@@ -51,21 +51,21 @@ html(dir='ltr', lang='en')
               #WikiaArticle.WikiaArticle
                 .home-top-right-ads
                 #mw-content-text.mw-content-ltr.mw-content-text(dir='ltr', lang='en')
-                  // Google Tag Manager (noscript)
-                  noscript
-                    iframe(src='https://www.googletagmanager.com/ns.html?id=GTM-MDPTN53', style='display:none;visibility:hidden', width='0', height='0')
-                  // End Google Tag Manager (noscript)
-                  #title-eraicons(style='float:right;position:static;display:none;')
-                    a.image.image-thumbnail.link-internal(href='https://starwars.fandom.com/wiki/Canon', title='This article details a subject that is considered canon.')
-                      img.lzy.lzyPlcHld(src='data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D', alt='Premium-Eras-canon', data-image-key='Premium-Eras-canon.png', data-image-name='Premium-Eras-canon.png', data-src='https://vignette.wikia.nocookie.net/starwars/images/b/be/Premium-Eras-canon.png/revision/latest?cb=20170617140440', onload="if(typeof ImgLzy==='object'){ImgLzy.load(this)}", width='112', height='20')
-                      noscript
-                        img(src='https://vignette.wikia.nocookie.net/starwars/images/b/be/Premium-Eras-canon.png/revision/latest?cb=20170617140440', alt='Premium-Eras-canon', data-image-key='Premium-Eras-canon.png', data-image-name='Premium-Eras-canon.png', width='112', height='20')
-                  .disambig.noprint(style="background:#ddd; border-radius:10px; margin-top:0px; margin-bottom:20px; padding:20px;")
+                  
+                  .canon-v-legends
+                    a.dark
+                      img(src="img/canon-white.webp")
+                    a.light
+                      img(src="img/legends-black.webp")
+
+
+
+                  .disambig.noprint(style="background:#ddd; border-radius:6px; margin-top:20px; margin-bottom:20px; padding:20px;")
                     p This article is about The F Plus Ridiculist.  You may be looking for Footwear of Greek Mythology, cool shoes to buy when your wife divorces you, or probably just pictures of Star Wars actresses barefoot. Head on over to 
                       a(href="https://www.wikifeet.com/") WikiFeet
                       | , you gross nerd!
 
-                  div(style='background: #7BB0D8; color: #000; border-radius:10px; margin-bottom:20px; padding:20px;')
+                  div(style='background: #7BB0D8; color: #000; border-radius:6px; margin-bottom:20px; padding:20px;')
                     img(src="img/ackbar.jpg" style="float:left; margin-right:20px;")
                     h1(style="font-size:150%; font-weight:bold;") It's a trap!
                     p That's a thing that they say in a Star Wars movie and I typed it! Now you're reading a line from a Star Wars movie on your computer. Isn't that nice? Hey, do you remember Star Wars? Star Wars you guys!
@@ -138,6 +138,18 @@ html(dir='ltr', lang='en')
 
                   p Toast was made by applying direct heat to bread. This was done in several ways, but the most common method for converting toast into bread was to use a specialized machine known colloquially as a "toaster" which had heated coils inside that would heat each slice of bread on both sides. Or you could use The Force.
                   p Achilles Heelies preferred his toast to be only slightly toasted, which is basically just warm bread.
+
+                  br
+                  h1 Other Storylines
+                  h2 Role in The LEGO® F Plus™
+
+                  p In the 
+                    strong The LEGO® F Plus™
+                    |  series of video games for the Xbox One, PlayStation 2, and Panty Panty Mahjong Tablet, the character of Achilles' Heelies does not show up until the third game in the series, 
+                    strong The LEGO® F Plus™ Jerks Off The LEGO™ Harlem Globetrotters
+                    | .
+
+
 
                   h2 A list for later
                   ul
@@ -243,13 +255,9 @@ html(dir='ltr', lang='en')
                       a(href='https://starwars.fandom.com/wiki/Zophis_crystal', title='Zophis crystal') Zophis crystal
                       sup#cite_ref-Rise_of_the_Separatists_6-2.reference
                         a(href='#cite_note-Rise_of_the_Separatists-6') [7]
-                  h2
-                    span#Known_crystal_colors.mw-headline Known crystal colors
-                    span.editsection
-                      a(href='https://starwars.fandom.com/wiki/Kyber_crystal?action=edit&section=4', title='Edit Known crystal colors section')
-                        img.sprite.edit-pencil(src='data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D')
-                        | Edit
-              nav#articleCategories.article-categories
+
+
+              nav#articleCategories.article-categories(style="font-size:75%")
                 #catlinks.catlinks
                   #mw-normal-catlinks.mw-normal-catlinks
                     a(href='https://starwars.fandom.com/wiki/Special:Categories', title='Special:Categories', rel='nofollow') Categories
