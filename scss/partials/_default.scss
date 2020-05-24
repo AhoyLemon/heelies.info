@@ -9,3 +9,11 @@ h6 { font-size: .75rem; }
 
 body { background:$body; color:$copy; font-family:$font-family; }
 img { max-width: 100%; }
+
+
+#WikiaPage { width:initial !important; max-width:1240px; }
+
+.grid { display: grid; gap:16px;
+  &[columns="1"] { grid-template-columns: 1fr; }
+  &[columns="3"] { grid-template-columns: repeat(3,1fr); }
+}
