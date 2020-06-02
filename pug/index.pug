@@ -3,7 +3,7 @@ html(dir='ltr', lang='en')
   include partials/_head.pug
   body.mediawiki.ltr.ns-0.ns-subject.page-Kyber_crystal.oasis-breakpoints.skin-oasis.user-anon.background-fixed.background-not-tiled.background-dynamic.wiki-starwars
     .background-image-gradient
-    .WikiaSiteWrapper
+    .WikiaSiteWrapper#app
       h2 FANDOM
       #ad-skin.wikia-ad.noprint
 
@@ -53,10 +53,12 @@ html(dir='ltr', lang='en')
                 #mw-content-text.mw-content-ltr.mw-content-text(dir='ltr', lang='en')
                   
                   .canon-v-legends
-                    a.dark
-                      img(src="img/canon-white.webp")
-                    a.light
-                      img(src="img/legends-black.webp")
+                    a(@click="mode = 'canon'" :class="{ dark: mode == 'canon', light: mode == 'legends'}")
+                      img(src="img/canon-white.webp" v-if="mode == 'canon'")
+                      img(src="img/canon-black.webp" v-if="mode == 'legends'")
+                    a(@click="mode = 'legends'" :class="{ dark: mode == 'legends', light: mode == 'canon'}")
+                      img(src="img/legends-black.webp" v-if="mode == 'canon'")
+                      img(src="img/legends-white.webp" v-if="mode == 'legends'")
 
 
 
@@ -86,176 +88,8 @@ html(dir='ltr', lang='en')
                         span.noprint
                           sup
                             a(href='https://starwars.fandom.com/wiki/Rogue_One:_A_Star_Wars_Story', title='Rogue One: A Star Wars Story') [src]
-                  p
-                    b Achilles' Heelies
-                    | , a Force-sensitive human male, was an F Plus Ridiculist who celebrated his 30th Birthday amid the COVID lockdown on June 7th, 2020. Along with his companions Spaceboots Stargears, A'dumb Bozeart, and Fat Hank The Pissboy, Heelies liberated the Prisoners of Sandprison from the Evil Emperor Baaa'by, by playing the traditional space game known as Peek-A-Boo, and then freeing all the prisoners while The Emperor had his hands over his eyes. He also had a job at some place.
-                  //-nav#toc.toc(data-loaded='false')
-                    #toctitle
-                      h2 Contents
-                      span.toctoggle
-                        | [
-                        a#togglelink.internal(href='#', data-show='show', data-hide='hide') show
-                        | ]
-                    ol
-                  h2 Socks
-                  .quote
-                    dl
-                      dd
-                        span(title='Source: Star Wars: Rogue One: Rebel Dossier')
-                          | "
-                          i
-                            | What is the measure of a man? Is it it his strength of character? How he handles his blade? The tender but firm way that he kisses a woman? No! If you want to  
-                            strong truly
-                            |  know a man, you must look at his socks
-                          | "
-                      dd
-                        | ―
-                        a(href='https://starwars.fandom.com/wiki/Jan_Dodonna', title='Jan Dodonna') Darth Cunning
-                  p
-                    | Achilles' Heelies was known to wear a fun pair of dress socks with a geometric pattern
-                    sup#cite_ref-Catalyst_1-4.reference
-                      a(href='#cite_note-Catalyst-1') [2]
-                    | . These socks were believed by some to imbue him with like, The Force, or whatever. Once, Queen Lasertits tried to trick Heelies into removing his socks, by uttering the famous phrase "Ba ba black sheep, have you any wool, I sure think your socks are cool." It's very important that you know Queen Lasertits was from a planet that pronounced the word "wool" with a long "ooo" sound, therefore it rhymed with the word "cool".
 
-                  h2 Screwdriver
-                  p A screwdriver was a device used for repairing or dismantling manufactured devices. They were typically made of space-metal, such as Stieelle or Aluminimiminiminiminimum, and are composed of a single cylander of space metal with a shape on one end, and then a handle (or "Hand Grib Device Quadrant", in Loovieum) where the user can grip the screwdriver. Screwdrivers do not have special powers and can't sedate animals or stop bullets. That's not a Star Wars thing, that's fucking 
-                    i Dr. Who
-                    | , Phillip! God, you're embarassing yourself.
-                  p Achilles Heelies owned a screwdriver that is black. He used to have another black screwdriver that he found on an off ramp, and he picked it up and carried for like five years, but eventually he lost it.
-                  p He also owned a three pound weight that he probably found on a different off-ramp. The purpose of the weight is unknown; Who the fuck needs a three pound weight?
-
-                  h2 Toast
-                  figure.article-thumb.tleft.show-info-icon(style='width: 200px')
-                    img(src="img/toast-2.jpg" style="width:200px;")
-                    figcaption
-                      p.caption A slice of bread that has been toasted, but not a lot.
-                  
-                  p Throughout the latter part of 
-                    strong The War Where The Robots Were Mad At The Humans For Being Mean To Them 
-                    | and into the majority of 
-                    strong The War Where Everything Seemed Like It Was Fine But Then The Robots Got Mad Again About How The Humans Treated Them
-                    | , toast was enjoyed by high ranking government officials as well as lowly staff like the guy that came over to fix My Mom's doorbell last week. I think his name was Carlos. He was weird. Mom wanted me to fix the doorbell but I told her I don't know anything about how doorbells work.
-
-                  p Toast was made by applying direct heat to bread. This was done in several ways, but the most common method for converting toast into bread was to use a specialized machine known colloquially as a "toaster" which had heated coils inside that would heat each slice of bread on both sides. Or you could use The Force.
-                  p Achilles Heelies preferred his toast to be only slightly toasted, which is basically just warm bread.
-
-                  br
-                  h1 Other Storylines
-                  h2 Role in The LEGO® F Plus™
-
-                  p In the 
-                    strong The LEGO® F Plus™
-                    |  series of video games for the Xbox One, PlayStation 2, and Panty Panty Mahjong Tablet, the character of Achilles' Heelies does not show up until the third game in the series, 
-                    strong The LEGO® F Plus™ Jerks Off The LEGO™ Harlem Globetrotters
-                    | .
-
-
-
-                  h2 A list for later
-                  ul
-                    li
-                      a(href='https://starwars.fandom.com/wiki/Adegan_crystal', title='Adegan crystal') Adegan crystal
-                      sup#cite_ref-Gadgets_and_Gear_0-6.reference
-                        a(href='#cite_note-Gadgets_and_Gear-0') [1]
-                      ul
-                        li
-                          a(href='https://starwars.fandom.com/wiki/Mephite_crystal', title='Mephite crystal') Mephite crystal
-                          sup#cite_ref-Gadgets_and_Gear_0-7.reference
-                            a(href='#cite_note-Gadgets_and_Gear-0') [1]
-                    li
-                      a.new(title='Barab ingot/Canon (page does not exist)', rel='nofollow', data-uncrawlable-url='L3dpa2kvQmFyYWJfaW5nb3QvQ2Fub24/YWN0aW9uPWVkaXQmcmVkbGluaz0x') Barab ingot
-                      sup#cite_ref-Gadgets_and_Gear_0-8.reference
-                        a(href='#cite_note-Gadgets_and_Gear-0') [1]
-                    li
-                      a.new(title='Christophsis crystal (page does not exist)', rel='nofollow', data-uncrawlable-url='L3dpa2kvQ2hyaXN0b3Boc2lzX2NyeXN0YWw/YWN0aW9uPWVkaXQmcmVkbGluaz0x') Christophsis crystal
-                      sup#cite_ref-Collapse_of_the_Republic_25-0.reference
-                        a(href='#cite_note-Collapse_of_the_Republic-25') [26]
-                    li
-                      a.new(title='Corrupted crystal (page does not exist)', rel='nofollow', data-uncrawlable-url='L3dpa2kvQ29ycnVwdGVkX2NyeXN0YWw/YWN0aW9uPWVkaXQmcmVkbGluaz0x') Corrupted crystal
-                      sup#cite_ref-Gadgets_and_Gear_0-9.reference
-                        a(href='#cite_note-Gadgets_and_Gear-0') [1]
-                    li
-                      a.new(title='Cracked Jedha crystal (page does not exist)', rel='nofollow', data-uncrawlable-url='L3dpa2kvQ3JhY2tlZF9KZWRoYV9jcnlzdGFsP2FjdGlvbj1lZGl0JnJlZGxpbms9MQ==') Cracked Jedha crystal
-                      sup#cite_ref-Knights_of_Fate_26-0.reference
-                        a(href='#cite_note-Knights_of_Fate-26') [27]
-                    li
-                      a(href='https://starwars.fandom.com/wiki/Dantari_crystal', title='Dantari crystal') Dantari crystal
-                      sup#cite_ref-Gadgets_and_Gear_0-10.reference
-                        a(href='#cite_note-Gadgets_and_Gear-0') [1]
-                    li
-                      a(href='https://starwars.fandom.com/wiki/Dragite_gem', title='Dragite gem') Dragite gem
-                      sup#cite_ref-Gadgets_and_Gear_0-11.reference
-                        a(href='#cite_note-Gadgets_and_Gear-0') [1]
-                    li
-                      a(href='https://starwars.fandom.com/wiki/Ghostfire_crystal', title='Ghostfire crystal') Ghostfire crystal
-                      sup#cite_ref-Gadgets_and_Gear_0-12.reference
-                        a(href='#cite_note-Gadgets_and_Gear-0') [1]
-                    li
-                      a(href='https://starwars.fandom.com/wiki/Ilum_crystal', title='Ilum crystal') Ilum crystal
-                      sup#cite_ref-Gadgets_and_Gear_0-13.reference
-                        a(href='#cite_note-Gadgets_and_Gear-0') [1]
-                      ul
-                        li
-                          | Mephite crystal
-                          sup#cite_ref-Nexus_of_Power_27-0.reference
-                            a(href='#cite_note-Nexus_of_Power-27') [28]
-                        li
-                          a(href='https://starwars.fandom.com/wiki/Pontite_crystal', title='Pontite crystal') Pontite crystal
-                          sup#cite_ref-Nexus_of_Power_27-1.reference
-                            a(href='#cite_note-Nexus_of_Power-27') [28]
-                    li
-                      a.new(title='Kimber stone (page does not exist)', rel='nofollow', data-uncrawlable-url='L3dpa2kvS2ltYmVyX3N0b25lP2FjdGlvbj1lZGl0JnJlZGxpbms9MQ==') Kimber stone
-                      sup#cite_ref-Gadgets_and_Gear_0-14.reference
-                        a(href='#cite_note-Gadgets_and_Gear-0') [1]
-                    li
-                      a(href='https://starwars.fandom.com/wiki/Krayt_dragon_pearl', title='Krayt dragon pearl') Krayt dragon pearl
-                      sup#cite_ref-Gadgets_and_Gear_0-15.reference
-                        a(href='#cite_note-Gadgets_and_Gear-0') [1]
-                    li
-                      a.new(title='Lorrdian gemstone/Canon (page does not exist)', rel='nofollow', data-uncrawlable-url='L3dpa2kvTG9ycmRpYW5fZ2Vtc3RvbmUvQ2Fub24/YWN0aW9uPWVkaXQmcmVkbGluaz0x') Lorrdian gemstone
-                      sup#cite_ref-Gadgets_and_Gear_0-16.reference
-                        a(href='#cite_note-Gadgets_and_Gear-0') [1]
-                    li
-                      a.new(title='Nishalorite stone (page does not exist)', rel='nofollow', data-uncrawlable-url='L3dpa2kvTmlzaGFsb3JpdGVfc3RvbmU/YWN0aW9uPWVkaXQmcmVkbGluaz0x') Nishalorite stone
-                      sup#cite_ref-Gadgets_and_Gear_0-17.reference
-                        a(href='#cite_note-Gadgets_and_Gear-0') [1]
-                    li
-                      a(href='https://starwars.fandom.com/wiki/Obsidian', title='Obsidian') Obsidian
-                      sup.reference(id='cite_ref-Galaxy.27s_Edge_28-0')
-                        a(href='#cite_note-Galaxy.27s_Edge-28') [29]
-                    li
-                      a.new(title='Seeker crystal (page does not exist)', rel='nofollow', data-uncrawlable-url='L3dpa2kvU2Vla2VyX2NyeXN0YWw/YWN0aW9uPWVkaXQmcmVkbGluaz0x') Seeker crystal
-                      sup#cite_ref-Gadgets_and_Gear_0-18.reference
-                        a(href='#cite_note-Gadgets_and_Gear-0') [1]
-                    li
-                      a.new(title='Solari crystal/Canon (page does not exist)', rel='nofollow', data-uncrawlable-url='L3dpa2kvU29sYXJpX2NyeXN0YWwvQ2Fub24/YWN0aW9uPWVkaXQmcmVkbGluaz0x') Solari crystal
-                      sup#cite_ref-Gadgets_and_Gear_0-19.reference
-                        a(href='#cite_note-Gadgets_and_Gear-0') [1]
-                    li
-                      a.new(title='Sorian crystal (page does not exist)', rel='nofollow', data-uncrawlable-url='L3dpa2kvU29yaWFuX2NyeXN0YWw/YWN0aW9uPWVkaXQmcmVkbGluaz0x') Sorian crystal
-                      sup#cite_ref-Gadgets_and_Gear_0-20.reference
-                        a(href='#cite_note-Gadgets_and_Gear-0') [1]
-                    li
-                      a(href='https://starwars.fandom.com/wiki/Synthetic_kyber_crystal', title='Synthetic kyber crystal') Synthetic kyber crystal
-                      sup#cite_ref-Catalyst_1-12.reference
-                        a(href='#cite_note-Catalyst-1') [2]
-                    li
-                      a(href='https://starwars.fandom.com/wiki/Tainted_Nightsister_Crystal', title='Tainted Nightsister Crystal') Tainted Nightsister Crystal
-                      sup#cite_ref-Unlimited_Power_29-0.reference
-                        a(href='#cite_note-Unlimited_Power-29') [30]
-                    li
-                      a.new(title='Thontiin crystal (page does not exist)', rel='nofollow', data-uncrawlable-url='L3dpa2kvVGhvbnRpaW5fY3J5c3RhbD9hY3Rpb249ZWRpdCZyZWRsaW5rPTE=') Thontiin crystal
-                      sup#cite_ref-Rise_of_the_Separatists_6-1.reference
-                        a(href='#cite_note-Rise_of_the_Separatists-6') [7]
-                    li
-                      a.new(title='Varpeline crystal (page does not exist)', rel='nofollow', data-uncrawlable-url='L3dpa2kvVmFycGVsaW5lX2NyeXN0YWw/YWN0aW9uPWVkaXQmcmVkbGluaz0x') Varpeline crystal
-                      sup#cite_ref-Gadgets_and_Gear_0-21.reference
-                        a(href='#cite_note-Gadgets_and_Gear-0') [1]
-                    li
-                      a(href='https://starwars.fandom.com/wiki/Zophis_crystal', title='Zophis crystal') Zophis crystal
-                      sup#cite_ref-Rise_of_the_Separatists_6-2.reference
-                        a(href='#cite_note-Rise_of_the_Separatists-6') [7]
-
+                  include partials/_content.pug
 
               nav#articleCategories.article-categories(style="font-size:75%")
                 #catlinks.catlinks
