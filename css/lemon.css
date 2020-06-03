@@ -265,3 +265,25 @@ img {
 .canon-v-legends a.dark:hover {
   background: #084a87;
 }
+
+a.mcf-card-article {
+  height: 100%;
+  display: block;
+}
+
+.wiki-link {
+  position: relative;
+}
+.wiki-link figcaption {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-weight: bold;
+  color: white;
+}
+.wiki-link figcaption .title {
+  font-size: 130%;
+}
+.wiki-link figcaption .subtitle {
+  opacity: 0.5;
+}
