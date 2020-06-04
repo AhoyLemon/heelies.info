@@ -23,3 +23,28 @@ mixin formatDate(d)
 
 mixin outsideLink(title,url)
   a.link(href=url target="_blank" noopener @click="trackLink('"+title+"', '"+url+"')")= title
+
+
+mixin post(username)
+  li.mcf-card-discussions__item
+    a.mcf-card-discussions__user-info
+      .wds-avatar
+        img.wds-avatar__image(src='https://static.wikia.nocookie.net/4f83f0c1-bc3c-4452-b70c-a19aa00282ce/scale-to-width-down/26')
+      span.mcf-card-discussions__user-subtitle
+        span=  username
+        | &bull; 
+        time.discussion-timestamp(datetime='2020-06-03T20:42:43Z') an hour ago
+    a(href='https://starwars.fandom.com/f/p/4400000000000020827' data-tracking='discussions-post-0')
+      .mcf-card-discussions__content Willrow Hood
+      .mcf-card-discussions__meta
+        .mcf-card-discussions__in
+          | in&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Fan Creations
+        .mcf-card-discussions__counters
+          svg#wds-icons-heart.wds-icon.wds-icon-tiny(xmlns='http://www.w3.org/2000/svg' viewbox='0 0 24 24')
+            path(fill-rule='evenodd' d='M6.47735071,3 C5.26090233,3 4.11879246,3.489 3.26148598,4.379 C1.48894692,6.218 1.48894692,9.211 3.26148598,11.05 L12.0006056,20.551 L20.7233129,11.067 C22.5132298,9.211 22.5132298,6.218 20.7397253,4.379 C19.8824188,3.489 18.7412743,3 17.524826,3 C16.3083776,3 15.1662677,3.489 14.3089612,4.379 L12.6841338,6.064 C12.3220955,6.439 11.6800811,6.439 11.3180429,6.064 L9.69225,4.379 C8.83494352,3.489 7.69379909,3 6.47735071,3 M12.0006056,23 C11.7370418,23 11.4840978,22.888 11.3016305,22.689 L1.87994818,12.446 C-0.629217962,9.845 -0.629217962,5.584 1.89539514,2.965 C3.11763614,1.698 4.74439449,1 6.47735071,1 L6.47735071,1 C8.21030694,1 9.83706529,1.698 11.0583408,2.966 L12.0006056,3.942 L12.9428704,2.965 C14.1651114,1.698 15.7918697,1 17.524826,1 L17.524826,1 C19.2577822,1 20.8845405,1.698 22.1058161,2.966 C24.6313946,5.584 24.6313946,9.845 22.1058161,12.464 L12.6995807,22.689 C12.5171135,22.888 12.2651349,23 12.0006056,23')
+          | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;3&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+          svg#wds-icons-comment.wds-icon.wds-icon-tiny(xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewbox='0 0 24 24')
+            defs
+              path#comment-a(d='M9 3c-1.603 0-3.11.624-4.243 1.757A5.961 5.961 0 0 0 3 9c0 3.309 2.691 6 6 6a1 1 0 0 1 1 1v3.586l4.293-4.293A.997.997 0 0 1 15 15c1.603 0 3.11-.624 4.243-1.757A5.961 5.961 0 0 0 21 9c0-3.309-2.691-6-6-6H9zm0 20a1 1 0 0 1-1-1v-5.062C4.059 16.443 1 13.072 1 9c0-2.137.832-4.146 2.343-5.657A7.946 7.946 0 0 1 9 1h6c4.411 0 8 3.589 8 8a7.948 7.948 0 0 1-2.343 5.657 7.934 7.934 0 0 1-5.232 2.331l-5.718 5.719A1 1 0 0 1 9 23z')
+            use(fill-rule='evenodd' xlink:href='#comment-a')
+          | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;0
