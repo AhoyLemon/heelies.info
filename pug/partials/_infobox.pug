@@ -1,5 +1,8 @@
 aside.portable-infobox.pi-background.pi-theme-character.pi-theme-Criminal.pi-layout-default
-  figure.pi-item.pi-image(data-source='image')
+  figure(v-if="mode == 'canon'")
+    img(src="img/heelies-arm.jpg")
+
+  figure.pi-item.pi-image(v-if="mode == 'legends'")
     a.image.image-thumbnail(href='img/heelies2-big.jpg')
       img.pi-image-thumbnail(src='img/heelies2.jpg')
   h2.pi-item.pi-item-spacing.pi-title(data-source='name') Achilles' Heelies

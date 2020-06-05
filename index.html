@@ -609,7 +609,8 @@
                     <p>That's a thing that they say in a Star Wars movie and I typed it! Now you're reading a line from a Star Wars movie on your computer. Isn't that nice? Hey, do you remember Star Wars? Star Wars you guys!</p>
                   </div>
                   <aside class="portable-infobox pi-background pi-theme-character pi-theme-Criminal pi-layout-default">
-                    <figure class="pi-item pi-image" data-source="image"><a class="image image-thumbnail" href="img/heelies2-big.jpg"><img class="pi-image-thumbnail" src="img/heelies2.jpg"></a></figure>
+                    <figure v-if="mode == 'canon'"><img src="img/heelies-arm.jpg"></figure>
+                    <figure class="pi-item pi-image" v-if="mode == 'legends'"><a class="image image-thumbnail" href="img/heelies2-big.jpg"><img class="pi-image-thumbnail" src="img/heelies2.jpg"></a></figure>
                     <h2 class="pi-item pi-item-spacing pi-title" data-source="name">Achilles' Heelies</h2>
                     <section class="pi-item pi-group pi-border-color">
                       <h2 class="pi-item pi-header pi-secondary-font pi-item-spacing pi-secondary-background">Biographical information</h2>
@@ -720,6 +721,11 @@
                         <dd>―<a href="https://starwars.fandom.com/wiki/Jan_Dodonna" title="Jan Dodonna">Edwin Starrwarss</a></dd>
                       </dl>
                     </div>
+                    <figure class="article-thumb show-info-icon"><a href="img/fordfusion-big.jpg"><img src="img/fordfusion.jpg"></a>
+                      <figcaption>
+                        <p class="caption">Heelies, piloting a FordFusion Thx-69-420, led the liberation of Atheistia During the Battle of Bimbola'and</p>
+                      </figcaption>
+                    </figure>
                     <p> Achilles' Heelies has held several high-ranking positions in both the Galactic Empire and the Rebel Alliance. This is a list of known battles, wars, disputes, and other deadly conflicts, that Heelies has participated in.</p>
                     <ul>
                       <li>Second Galactic Civil War</li>
@@ -751,7 +757,7 @@
                     <p>Achilles Heelies owned a screwdriver that is black. He used to have another black screwdriver that he found on an off ramp, and he picked it up and carried for like five years, but eventually he lost it.</p>
                     <p>He also owned a three pound weight that he probably found on a different off-ramp. The purpose of the weight is unknown; Who the fuck needs a three pound weight?</p>
                   </section>
-                  <section>
+                  <section v-if="mode == 'canon'">
                     <h2>Toast</h2>
                     <figure class="article-thumb tleft show-info-icon" style="width: 200px"><img src="img/toast-2.jpg" style="width:200px;">
                       <figcaption>
@@ -762,7 +768,7 @@
                     <p>Toast was made by applying direct heat to bread. This was done in several ways, but the most common method for converting toast into bread was to use a specialized machine known colloquially as a "toaster" which had heated coils inside that would heat each slice of bread on both sides. Or you could use The Force.</p>
                     <p>Achilles Heelies preferred his toast to be only slightly toasted, which is basically just warm bread.</p><br>
                   </section>
-                  <section>
+                  <section v-if="mode == 'canon'">
                     <h2>Other Culinary Preferences</h2>
                     <p>In <strong>The Battle For Strumnnnn</strong>, Achilles Heelies expressed a fondness for what was known as Mexican Food such as enchiladas, refried beans, and Nacho Cheese Doritos. His near constant hunger for Mexican Food could sometimes be satiated by satiated by cooking things in his Parlour d'Pasturage (or "Kitchen")</p>
                     <p>Possessing a skill known to very few Star Wars fans, Achilles could use The Force (and also natural gas, I suppose) to combine ingredients into a Mee'al. His methods for doing this are widely unknown, but it's believed that a spatula shaped like a guitar was involved.</p><b><strong>HIS FAVORITE BURNER IS THE BOTTOM LEFT ONE.</strong></b>

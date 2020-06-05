@@ -66,6 +66,12 @@ section(v-if="mode == 'legends'")
         | ―
         a(href='https://starwars.fandom.com/wiki/Jan_Dodonna', title='Jan Dodonna') Edwin Starrwarss
 
+  figure.article-thumb.show-info-icon
+    a(href="img/fordfusion-big.jpg")
+      img(src="img/fordfusion.jpg")
+    figcaption
+      p.caption Heelies, piloting a FordFusion Thx-69-420, led the liberation of Atheistia During the Battle of Bimbola'and
+      
   p  Achilles' Heelies has held several high-ranking positions in both the Galactic Empire and the Rebel Alliance. This is a list of known battles, wars, disputes, and other deadly conflicts, that Heelies has participated in.
 
   ul
@@ -110,7 +116,7 @@ section
   p Achilles Heelies owned a screwdriver that is black. He used to have another black screwdriver that he found on an off ramp, and he picked it up and carried for like five years, but eventually he lost it.
   p He also owned a three pound weight that he probably found on a different off-ramp. The purpose of the weight is unknown; Who the fuck needs a three pound weight?
 
-section
+section(v-if="mode == 'canon'")
   h2 Toast
   figure.article-thumb.tleft.show-info-icon(style='width: 200px')
     img(src="img/toast-2.jpg" style="width:200px;")
@@ -128,7 +134,7 @@ section
 
   br
 
-section
+section(v-if="mode == 'canon'")
   h2 Other Culinary Preferences
   p In 
     strong The Battle For Strumnnnn
