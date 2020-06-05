@@ -1,0 +1,68 @@
+footer#WikiaFooter.WikiaFooter.notoolbar
+  #bottomLeaderboardWrapper
+    // BEGIN SLOTNAME: bottom_leaderboard
+    #bottom_leaderboard.wikia-ad.noprint.default-height
+    // END SLOTNAME: bottom_leaderboard
+  #mixed-content-footer.mcf-en(data-number-of-wiki-articles='8', data-number-of-ns-articles='9')
+    .mcf-contentt
+      h1.mcf-header Fan Feed
+      .grid(columns="3")
+        figure
+          img(src="img/superfooter/wm.jpg")
+
+        figure.wiki-link
+          img(src="img/superfooter/purple-pen.jpg")
+          figcaption
+            .title A Purple Pen
+            .subtitle Stationary Voyagers
+
+        figure.wiki-link
+          img(src="img/superfooter/bboy360.jpg")
+          figcaption
+            .title BBOY360
+            .subtitle The Cheevos Wiki
+
+        figure.wiki-link
+          img(src="img/superfooter/patrick-stone.jpg")
+          figcaption
+            .title The Stone (rev. 3)
+            .subtitle Patrick82's Audio Hacks
+
+        .mcf-card.mcf-card-discussions(style="height:auto; max-height:380px")
+          header.mcf-card-discussions__header
+            span Latest Discussions
+            a.mcf-card-discussions__link(href='https://starwars.fandom.com/f' data-tracking='discussions-link')
+              | View All&#x9;&#x9;&#x9;
+              svg#wds-icons-arrow.wds-icon.wds-icon-small.mcf-card-discussions__link-icon(xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewbox='0 0 24 24')
+                defs
+                  path#arrow-a(d='M23 11H3.414l7.293-7.293a.999.999 0 1 0-1.414-1.414l-9 9a.983.983 0 0 0-.293.704v.006a.988.988 0 0 0 .293.704l9 9a.997.997 0 0 0 1.414 0 .999.999 0 0 0 0-1.414L3.414 13H23a1 1 0 1 0 0-2')
+                use(fill-rule='evenodd' xlink:href='#arrow-a')
+          ul.mcf-card-discussions__list
+            +post('FELLAS: Be honest, is yours guys light sabres cut or uncut?',
+                  'Polls',
+                  'Fleshy Pete',
+                  '13 minutes ago')
+            +post('Is it true that real life is actually not like a video game?',
+                  'Philosophy',
+                  'FireFireFlame2020',
+                  '1 hour ago')
+            +post('okay so real talk im super high right now but what if the padawan is actually the master...???',
+                  'Mythology',
+                  'Phandango',
+                  '1 hour ago')
+            +post('MY MOM IS SUCH A BITCH! [PART 7]',
+                  'Rants',
+                  'ILuvMyXbox',
+                  '2 hours ago')
+            
+        
+        figure
+          img(src="img/superfooter/your-area.jpg")
+        figure
+          img(src="https://via.placeholder.com/400x400")
+        figure
+          img(src="https://via.placeholder.com/400x400")
+        figure
+          img(src="https://via.placeholder.com/400x400")
+        figure
+          img(src="https://via.placeholder.com/400x400")
