@@ -23,20 +23,18 @@ html(dir='ltr', lang='en')
               .page-header__categories
                 span.page-header__categories-in(data-tracking='categories-top-in') in:
                 .page-header__categories-links
-                  a(href='https://starwars.fandom.com/wiki/Category:Canon_articles', data-tracking='categories-top-0') Canon articles
+                  a(href='https://starwars.fandom.com/wiki/Category:Canon_articles') Canon articles
                   | , 
-                  a(href='https://starwars.fandom.com/wiki/Category:Articles_in_need_of_updating', data-tracking='categories-top-1') Articles in need of updating
+                  a(href='https://starwars.fandom.com/wiki/Category:Legends_articles', data-tracking='categories-top-2') Legends Articles
                   | , 
-                  a(href='https://starwars.fandom.com/wiki/Category:Articles_with_an_excess_of_redlinks', data-tracking='categories-top-2') Articles with an excess of redlinks
-                  | , 							
+                  a(href='https://starwars.fandom.com/wiki/Category:Canon_articles_with_Legends_content') Canon articles with Legends content
+                  | , 
+                  a(href='https://starwars.fandom.com/wiki/Category:Legends_articles_with_Canon_content') Legends articles with Canon content
+                  | , 
+                  a(href='https://starwars.fandom.com/wiki/Category:Banned_users') Banned Users
                   .wds-dropdown.page-header__categories-dropdown
-                    a.wds-dropdown__toggle(data-tracking='categories-more') and 2 more
-                    .wds-dropdown__content.page-header__categories-dropdown-content.wds-is-left-aligned
-                      ul.wds-list.wds-is-linked
-                        li
-                          a(href='https://starwars.fandom.com/wiki/Category:Pages_needing_citation', data-tracking='categories-top-more-0') Pages needing citation
-                        li
-                          a(href='https://starwars.fandom.com/wiki/Category:Lightsaber_crystals', data-tracking='categories-top-more-1') Lightsaber crystals
+                    span and 
+                    a(href="https://starwars.fandom.com/wiki/Special:Categories?limit=5000000") 27,131 more
               h1.page-header__title Achilles' Heelies
             .page-header__contribution
               div
@@ -65,12 +63,12 @@ html(dir='ltr', lang='en')
 
 
 
-                  .disambig.noprint(style="background:#ddd; border-radius:6px; margin-top:20px; margin-bottom:20px; padding:20px;")
+                  .disambig.noprint(style="background:#ddd; border-radius:6px; margin-top:20px; margin-bottom:20px; padding:20px;" v-if="mode == 'canon'")
                     p This article is about The F Plus Ridiculist.  You may be looking for Footwear of Greek Mythology, cool shoes to buy when your wife divorces you, or probably just pictures of Star Wars actresses barefoot. Head on over to 
                       a(href="https://www.wikifeet.com/") WikiFeet
                       | , you gross nerd!
 
-                  div(style='background: #7BB0D8; color: #000; border-radius:6px; margin-bottom:20px; padding:20px;')
+                  div(style='background: #7BB0D8; color: #000; border-radius:6px; margin-bottom:20px; padding:20px;' v-if="mode == 'legends'")
                     img(src="img/ackbar.jpg" style="float:left; margin-right:20px;")
                     h1(style="font-size:150%; font-weight:bold;") It's a trap!
                     p That's a thing that they say in a Star Wars movie and I typed it! Now you're reading a line from a Star Wars movie on your computer. Isn't that nice? Hey, do you remember Star Wars? Star Wars you guys!
