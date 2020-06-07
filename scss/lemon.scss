@@ -28,7 +28,7 @@ a.mcf-card-article { height:100%; display:block; }
 
 .wiki-link { position: relative; 
   &:before { @include position(absolute,0,0,0,0); content: ' '; background:linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000); }
-  figcaption { position: absolute; bottom:20px; left:20px; font-weight: bold; color:white;
+  figcaption { position: absolute; bottom:20px; left:20px; right:20px; font-weight: bold; color:white;
     .title { font-size:130%; margin-bottom: 0.5em; }
     .subtitle { opacity: 0.5;; }
   }
