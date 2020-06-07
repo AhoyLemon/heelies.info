@@ -37,7 +37,7 @@ var app = new Vue({
 
     window.setInterval(function(){
       self.rotateBanner();
-    }, 5000);
+    }, 8000);
   }
 
 });
