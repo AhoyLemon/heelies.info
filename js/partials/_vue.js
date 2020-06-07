@@ -6,7 +6,10 @@ var app = new Vue({
     currentBanner: '',
     banners: [
       'soaker-for-bear.png',
-      'ears-4-kids.png'
+      'ears-4-kids.png',
+      'you-are-ugly.jpg',
+      'soylent.jpg',
+      'shrek-yourself.jpg'
     ]
   },
 
