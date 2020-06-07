@@ -299,3 +299,16 @@ a.mcf-card-article {
 .wiki-link figcaption .subtitle {
   opacity: 0.5;
 }
+
+#WikiaRailWrapper {
+  -webkit-column-count: initial;
+     -moz-column-count: initial;
+          column-count: initial;
+}
+
+@media (max-width: 767px) {
+  .grid[columns="3"] {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}

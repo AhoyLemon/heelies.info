@@ -33,3 +33,9 @@ a.mcf-card-article { height:100%; display:block; }
     .subtitle { opacity: 0.5;; }
   }
 }
+
+#WikiaRailWrapper { column-count: initial; }
+
+@media (max-width:$mobile-max) { 
+  .grid[columns="3"] { grid-template-columns: 1fr; }
+}
